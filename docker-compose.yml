@@ -11,6 +11,7 @@ services:
       - sqlvolume:/var/opt/mssql
     networks:
       - mssql
+    restart: unless-stopped
 
 volumes:
   sqlvolume:
